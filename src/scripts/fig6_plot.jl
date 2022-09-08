@@ -3,15 +3,6 @@ using Pkg
 Pkg.activate(".")
 Pkg.instantiate()
 
-# set some environmental variables
-ENV["MPLBACKEND"] = "agg"
-ENV["PYTHON"] = homedir() * "/.showyourwork/env/bin/python"
-ENV["CONDA_JL_HOME"] = homedir() * "/.showyourwork/env"
-
-# build the python calling stuff
-Pkg.build("PyCall")
-Pkg.build("PyPlot")
-
 # package imports
 using JLD2
 using GRASS
