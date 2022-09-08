@@ -2,7 +2,7 @@
 
 julia_version = "1.8.0"
 manifest_format = "2.0"
-project_hash = "d38a9177f67558b7124ffd3dbe7af6ec4f927709"
+project_hash = "8557764020c1c564cc34fa15760f8cda6167be1b"
 
 [[deps.AbstractFFTs]]
 deps = ["ChainRulesCore", "LinearAlgebra"]
@@ -22,9 +22,9 @@ version = "1.1.1"
 
 [[deps.ArrayInterfaceCore]]
 deps = ["LinearAlgebra", "SparseArrays", "SuiteSparse"]
-git-tree-sha1 = "40debc9f72d0511e12d817c7ca06a721b6423ba3"
+git-tree-sha1 = "5bb0f8292405a516880a3809954cb832ae7a31c5"
 uuid = "30b0a656-2188-435a-8636-2ec0e6a096e2"
-version = "0.1.17"
+version = "0.1.20"
 
 [[deps.Artifacts]]
 uuid = "56f22d72-fd6d-98f1-02f0-08ddc0907c33"
@@ -70,9 +70,9 @@ version = "0.5.1"
 
 [[deps.ChainRulesCore]]
 deps = ["Compat", "LinearAlgebra", "SparseArrays"]
-git-tree-sha1 = "80ca332f6dcb2508adba68f22f551adb2d00a624"
+git-tree-sha1 = "8a494fe0c4ae21047f28eb48ac968f0b8a6fcaa7"
 uuid = "d360d2e6-b24c-11e9-a2a3-2a2ae2dbcce4"
-version = "1.15.3"
+version = "1.15.4"
 
 [[deps.ChangesOfVariables]]
 deps = ["ChainRulesCore", "LinearAlgebra", "Test"]
@@ -202,9 +202,9 @@ uuid = "8ba89e20-285c-5b6f-9357-94700520ee1b"
 
 [[deps.Distributions]]
 deps = ["ChainRulesCore", "DensityInterface", "FillArrays", "LinearAlgebra", "PDMats", "Printf", "QuadGK", "Random", "SparseArrays", "SpecialFunctions", "Statistics", "StatsBase", "StatsFuns", "Test"]
-git-tree-sha1 = "334a5896c1534bb1aa7aa2a642d30ba7707357ef"
+git-tree-sha1 = "8579b5cdae93e55c0cff50fbb0c2d1220efd5beb"
 uuid = "31c24e10-a181-5473-b8eb-7969acd0382f"
-version = "0.25.68"
+version = "0.25.70"
 
 [[deps.DocStringExtensions]]
 deps = ["LibGit2"]
@@ -225,9 +225,9 @@ version = "0.6.8"
 
 [[deps.EchelleCCFs]]
 deps = ["CSV", "DataFrames", "Dates", "FITSIO", "ForwardDiff", "LinearAlgebra", "LsqFit", "NaNMath", "NamedTupleTools", "Optim", "OrderedCollections", "PDMats", "Pkg", "QuadGK", "Query", "RvSpectMLBase", "SpecialFunctions", "StaticArrays", "Statistics", "StatsBase", "ThreadedIterables"]
-git-tree-sha1 = "edc5d8eeb8a1d60de19963adbe23d05d94263c7a"
+git-tree-sha1 = "5439694f4eb62c6e67a7dc84d566d27b4f35e047"
 uuid = "5d9f57b1-d7b5-417c-8d79-eedbcaad0187"
-version = "0.2.6"
+version = "0.2.7"
 
 [[deps.FFTW]]
 deps = ["AbstractFFTs", "FFTW_jll", "LinearAlgebra", "MKL_jll", "Preferences", "Reexport"]
@@ -243,9 +243,9 @@ version = "3.3.10+0"
 
 [[deps.FITSIO]]
 deps = ["CFITSIO", "Printf", "Reexport", "Tables"]
-git-tree-sha1 = "e6033823834ec0070125120d4d4a1234f1826a47"
+git-tree-sha1 = "f4243755388de27c018f4bb6b19334e991532e5f"
 uuid = "525bcba6-941b-5504-bd06-fd0dc1a4d2eb"
-version = "0.16.12"
+version = "0.16.13"
 
 [[deps.FileIO]]
 deps = ["Pkg", "Requires", "UUIDs"]
@@ -264,9 +264,9 @@ uuid = "7b1f6079-737a-58dc-b8bc-7a2ca5c1b5ee"
 
 [[deps.FillArrays]]
 deps = ["LinearAlgebra", "Random", "SparseArrays", "Statistics"]
-git-tree-sha1 = "3399bbad4c9e9a2fd372a54d7b67b3c7121b6402"
+git-tree-sha1 = "87519eb762f85534445f5cda35be12e32759ee14"
 uuid = "1a297f60-69ca-5386-bcde-b61e274b549b"
-version = "0.13.3"
+version = "0.13.4"
 
 [[deps.FiniteDiff]]
 deps = ["ArrayInterfaceCore", "LinearAlgebra", "Requires", "Setfield", "SparseArrays", "StaticArrays"]
@@ -298,11 +298,11 @@ uuid = "9fa8497b-333b-5362-9e8d-4d0656e87820"
 
 [[deps.GRASS]]
 deps = ["BenchmarkTools", "CSV", "DataFrames", "Dates", "Distributed", "EchelleCCFs", "FFTW", "FITSIO", "FileIO", "GZip", "Glob", "HTTP", "HypothesisTests", "Interpolations", "JLD2", "LaTeXStrings", "LsqFit", "PyCall", "PyPlot", "Random", "SharedArrays", "Statistics", "StatsBase"]
-git-tree-sha1 = "70177e6959f042facc09abc64ab864f5dc20ac5e"
+git-tree-sha1 = "dbc441e1063b3f86e9d3c4d259ff52a91aa95921"
 repo-rev = "main"
 repo-url = "https://github.com/palumbom/GRASS#v1.0.2"
 uuid = "beaa24b3-4aa0-42b2-a8f3-c93b81cbd48b"
-version = "1.0.2"
+version = "1.0.3"
 
 [[deps.GZip]]
 deps = ["Libdl"]
@@ -463,9 +463,9 @@ version = "0.4.9"
 
 [[deps.LsqFit]]
 deps = ["Distributions", "ForwardDiff", "LinearAlgebra", "NLSolversBase", "OptimBase", "Random", "StatsBase"]
-git-tree-sha1 = "91aa1442e63a77f101aff01dec5a821a17f43922"
+git-tree-sha1 = "00f475f85c50584b12268675072663dfed5594b2"
 uuid = "2fda8390-95c7-5789-9bda-21331edee243"
-version = "0.12.1"
+version = "0.13.0"
 
 [[deps.MKL_jll]]
 deps = ["Artifacts", "IntelOpenMP_jll", "JLLWrappers", "LazyArtifacts", "Libdl", "Pkg"]
