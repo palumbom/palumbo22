@@ -1,0 +1,24 @@
+cluster:
+  mkdir -p logs/{rule} &&
+  sbatch
+    --account={resources.partition}
+    --job-name=smk-{rule}-{wildcards}
+    --output=logs/{rule}/{rule}-{wildcards}-%j.out
+default-resources:
+  - allocation="ebf11_c"
+  - mem_per_cpu="8192"
+  - time="00:10:00"
+  - nodes="1"
+  - ntasks="1"
+  - chdir="/storage/home/mlp95/work/palumbo22"
+restart-times: 3
+max-jobs-per-second: 10
+max-status-checks-per-second: 1
+local-cores: 1
+latency-wait: 60
+jobs: 500
+keep-going: True
+rerun-incomplete: True
+printshellcmds: True
+scheduler: greedy
+use-conda: True
