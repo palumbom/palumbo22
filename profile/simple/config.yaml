@@ -24,4 +24,5 @@ printshellcmds: True
 scheduler: greedy
 use-conda: True
 cluster-cancel: "scancel"
-cluster-status: "slurm-status.py"
+cluster-status: "status-sacct.sh" # chmod +x profile/simple/status-sacct.sh
+# cluster-status: "slurm-status.py" # chmod +x profile/simple/slurm-status.py
