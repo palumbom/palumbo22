@@ -4,6 +4,12 @@ rule fig2:
     output:
         "src/tex/figures/fig2a.pdf"
         "src/tex/figures/fig2b.pdf"
+    resources:
+        time="00:10:00",
+        nodes="1",
+        ntasks="1",
+        mem_per_cpu="8192",
+        chdir="/storage/home/mlp95/work/palumbo22"
     shell:
         "julia src/scripts/fig2.jl"
 
@@ -13,6 +19,12 @@ rule fig3:
     output:
         "src/tex/figures/fig3a.pdf"
         "src/tex/figures/fig3b.pdf"
+    resources:
+        time="00:30:00",
+        nodes="1",
+        ntasks="1",
+        mem_per_cpu="8192",
+        chdir="/storage/home/mlp95/work/palumbo22"
     shell:
         "julia src/scripts/fig3.jl"
 
