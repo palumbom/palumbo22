@@ -2,7 +2,8 @@ cluster:
   sbatch
     --account={resources.account}
     --job-name=smk-{rule}-{wildcards}
-    --output=/storage/home/mlp95/logs/{rule}/{rule}-{wildcards}-%j.out
+    # --output=/storage/home/mlp95/logs/{rule}/{rule}-{wildcards}-%j.out
+    --output=/storage/home/mlp95/logs/{rule}/derp.out
     --parsable
 default-resources:
   - account="ebf11_c"
