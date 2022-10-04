@@ -1,0 +1,5 @@
+{
+    "SBATCH_DEFAULTS": "account=ebf11_c",
+    "CLUSTER_NAME": "",
+    "CLUSTER_CONFIG": ""
+}
