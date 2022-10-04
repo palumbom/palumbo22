@@ -23,9 +23,10 @@ using FileIO
 end
 
 @everywhere datadir = py"""str(paths.data)""" * "/"
+@everywhere funcfile = py"""str(paths.scripts)""" * "/fig_functions.jl"
 
 # define spec_loop function
-include(GRASS.moddir * "figures/fig_functions.jl")
+include(funcfile)
 
 # some global stuff
 const N = round.(Int, 2 .^ range(6, 10, step=0.5))
