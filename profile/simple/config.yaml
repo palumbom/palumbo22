@@ -2,13 +2,18 @@ cluster:
   mkdir -p logs/{rule} &&
   sbatch
     --account={resources.account}
+    --nodes={resources.nodes}
+    --ntasks={resources.ntasks}
+    --mem-per-cpu={resources.mem_per_cpu}
+    --time={resources.time}
     --job-name=smk-{rule}-{wildcards}
-    --output=/storage/home/mlp95/logs/{rule}/{rule}-{wildcards}-%j.out
+    --output=logs/{rule}/{rule}-{wildcards}-%j.out
     --parsable
+
 default-resources:
   - account="ebf11_c"
   - mem_per_cpu="8192"
-  - time="00:10:00"
+  - time="01:00:00"
   - nodes="1"
   - ntasks="1"
   - chdir="/storage/home/mlp95/work/palumbo22"
