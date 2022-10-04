@@ -24,7 +24,7 @@ rule fig4:
     resources:
         time="48:00:00"
         nodes="1"
-        ntasks"7"
+        ntasks="7"
         mem_per_cpu="8192"
         chdir="/storage/home/mlp95/work/palumbo22"
     cache:
@@ -40,7 +40,7 @@ rule fig5:
     resources:
         time="48:00:00"
         nodes="1"
-        ntasks"7"
+        ntasks="7"
         mem_per_cpu="8192"
         chdir="/storage/home/mlp95/work/palumbo22"
     cache:
@@ -56,7 +56,7 @@ rule fig6:
     resources:
         time="48:00:00"
         nodes="1"
-        ntasks"7"
+        ntasks="7"
         mem_per_cpu="8192"
         chdir="/storage/home/mlp95/work/palumbo22"
     cache:
@@ -72,7 +72,7 @@ rule fig7:
     resources:
         time="48:00:00"
         nodes="1"
-        ntasks"7"
+        ntasks="7"
         mem_per_cpu="8192"
         chdir="/storage/home/mlp95/work/palumbo22"
     cache:
