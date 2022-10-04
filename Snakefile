@@ -92,10 +92,3 @@ rule fig7:
         True
     shell:
         "julia -p 7 src/scripts/fig7_sim.jl"
-
-
-# showyourwork build -s Snakefile --cluster "sbatch -A {cluster.account} -t {cluster.time} -N {cluster.nodes} -n {cluster.ntasks} --mem-per-cpu {cluster.mem_per_cpu}" --cluster-config cluster_config.yml --jobs 1  --cluster-cancel "scancel" --cluster-status ./status.py
-# showyourwork build -s Snakefile --cluster "sbatch -A ebf11 -t 01:00:00 -N 1 -n 1 --mem-per-cpu 8192 --parsable" --cluster-config cluster_config.yml --jobs 1  --cluster-cancel "scancel" --cluster-status /storage/home/mlp95/work/palumbo22/status.py
-# showyourwork build --profile
-
-# qsub -N PIPE -cwd -j yes python snakemake --cluster "ssh user@headnode_address 'qsub -N pipe_task -j yes -cwd -S /bin/sh ' " -j
