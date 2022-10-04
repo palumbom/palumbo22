@@ -22,10 +22,10 @@ rule fig4:
     output:
         "src/data/resolution_sim.jld2"
     resources:
-        time="48:00:00"
-        nodes="1"
-        ntasks="7"
-        mem_per_cpu="8192"
+        time="48:00:00",
+        nodes="1",
+        ntasks="7",
+        mem_per_cpu="8192",
         chdir="/storage/home/mlp95/work/palumbo22"
     cache:
         True
@@ -38,10 +38,10 @@ rule fig5:
     output:
         "src/data/depth_sim.jld2"
     resources:
-        time="48:00:00"
-        nodes="1"
-        ntasks="7"
-        mem_per_cpu="8192"
+        time="48:00:00",
+        nodes="1",
+        ntasks="7",
+        mem_per_cpu="8192",
         chdir="/storage/home/mlp95/work/palumbo22"
     cache:
         True
@@ -54,10 +54,10 @@ rule fig6:
     output:
         "src/data/inclination_sim.jld2"
     resources:
-        time="48:00:00"
-        nodes="1"
-        ntasks="7"
-        mem_per_cpu="8192"
+        time="48:00:00",
+        nodes="1",
+        ntasks="7",
+        mem_per_cpu="8192",
         chdir="/storage/home/mlp95/work/palumbo22"
     cache:
         True
@@ -70,10 +70,10 @@ rule fig7:
     output:
         "src/data/observation_sim.jld2"
     resources:
-        time="48:00:00"
-        nodes="1"
-        ntasks="7"
-        mem_per_cpu="8192"
+        time="48:00:00",
+        nodes="1",
+        ntasks="7",
+        mem_per_cpu="8192",
         chdir="/storage/home/mlp95/work/palumbo22"
     cache:
         True
