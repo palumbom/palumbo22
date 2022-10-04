@@ -6,7 +6,7 @@ cluster:
     --ntasks={resources.ntasks}
     --mem-per-cpu={resources.mem_per_cpu}
     --time={resources.time}
-    --job-name=smk-{rule}-{wildcards}
+    --job-name={rule}.%j
     --output=logs/{rule}/{rule}-{wildcards}-%j.out
     --parsable
 
