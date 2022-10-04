@@ -1,5 +1,5 @@
 
-cluster-cancel: "scancel"
+#cluster-cancel: "scancel"
 restart-times: "0"
 jobscript: "slurm-jobscript.sh"
 cluster: "slurm-submit.py"
