@@ -1,7 +1,7 @@
 cluster:
   mkdir -p logs/{rule} &&
   sbatch
-    --account={resources.partition}
+    --account={resources.allocation}
     --job-name=smk-{rule}-{wildcards}
     --output=logs/{rule}/{rule}-{wildcards}-%j.out
 default-resources:
