@@ -57,4 +57,5 @@ rule fig7:
         "julia -p 7 src/scripts/fig7_sim.jl"
 
 
-# showyourwork build --cluster "sbatch -A {cluster.account} -t {cluster.time} -N {cluster.nodes} -n {cluster.ntasks} --mem-per-cpu {cluster.mem_per_cpu}" --cluster-config cluster_config.yml --jobs 6
+# showyourwork build -s Snakefile --cluster "sbatch -A {cluster.account} -t {cluster.time} -N {cluster.nodes} -n {cluster.ntasks} --mem-per-cpu {cluster.mem_per_cpu}" --cluster-config cluster_config.yml --jobs 1  --cluster-cancel "scancel" --cluster-status --cluster-status ./status.py
+# showyourwork build -s Snakefile --cluster "sbatch -A ebf11 -t 01:00:00 -N 1 -n 1 --mem-per-cpu 8192" --cluster-config cluster_config.yml --jobs 1  --cluster-cancel "scancel" --cluster-status --cluster-status ./status.py
