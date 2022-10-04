@@ -23,4 +23,3 @@ dependencies:
       - src/data/inclination_sim.jld2
     src/scripts/fig7_plot.jl:
       - src/data/observation_sim.jld2
-

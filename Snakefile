@@ -24,7 +24,7 @@ rule fig4:
     cache:
         True
     shell:
-        "julia src/scripts/fig4_sim.jl"
+        "julia -p 7 src/scripts/fig4_sim.jl"
 
 rule fig5:
     input:
@@ -34,7 +34,7 @@ rule fig5:
     cache:
         True
     shell:
-        "julia src/scripts/fig5_sim.jl"
+        "julia -p 7 src/scripts/fig5_sim.jl"
 
 rule fig6:
     input:
@@ -44,7 +44,7 @@ rule fig6:
     cache:
         True
     shell:
-        "julia src/scripts/fig6_sim.jl"
+        "julia -p 7 src/scripts/fig6_sim.jl"
 
 rule fig7:
     input:
@@ -54,5 +54,7 @@ rule fig7:
     cache:
         True
     shell:
-        "julia src/scripts/fig7_sim.jl"
+        "julia -p 7 src/scripts/fig7_sim.jl"
 
+
+# showyourwork build --cluster "sbatch -A {cluster.account} -t {cluster.time} -N {cluster.nodes} -n {cluster.ntasks} --mem-per-cpu {cluster.mem_per_cpu}" --cluster-config cluster_config.yml --jobs 6
