@@ -14,6 +14,9 @@ echo "Job id: $SLURM_JOBID"
 echo "About to change into $SLURM_SUBMIT_DIR"
 cd $SLURM_SUBMIT_DIR
 echo "About to start showyourwork"
+showyourwork clean --force
+showyourwork cache delete
+showyourwork cache create
 showyourwork build --profile ./profile/simple/
 echo "showyourwork exited"
 date
