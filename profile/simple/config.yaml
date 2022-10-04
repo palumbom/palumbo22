@@ -1,12 +1,11 @@
 cluster:
-  mkdir -p logs/{rule} &&
   sbatch
-    --account={resources.allocation}
+    --account={resources.account}
     --job-name=smk-{rule}-{wildcards}
     --output=/storage/home/mlp95/logs/{rule}/{rule}-{wildcards}-%j.out
     --parsable
 default-resources:
-  - allocation="ebf11_c"
+  - account="ebf11_c"
   - mem_per_cpu="8192"
   - time="00:10:00"
   - nodes="1"
