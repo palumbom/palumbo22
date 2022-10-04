@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH -A ebf11_c
 #SBATCH --nodes=1
-#SBATCH --ntasks=1
+#SBATCH --ntasks=5
 #SBATCH --mem-per-cpu=1GB
 #SBATCH --time=48:00:00
 #SBATCH --job-name=showyourwork
@@ -17,7 +17,7 @@ echo "About to start showyourwork"
 showyourwork clean --force
 showyourwork cache delete
 showyourwork cache create
-showyourwork build --profile ./profile/simple/
+showyourwork build --cores 4 --profile ./profile/simple/
 echo "showyourwork exited"
 date
 
