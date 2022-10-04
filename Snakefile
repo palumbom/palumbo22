@@ -5,6 +5,7 @@ rule fig2:
         "src/tex/figures/fig2a.pdf"
         "src/tex/figures/fig2b.pdf"
     resources:
+        account="ebf11_c",
         time="00:10:00",
         nodes="1",
         ntasks="1",
