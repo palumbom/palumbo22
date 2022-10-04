@@ -13,7 +13,6 @@ rule fig3:
     output:
         "src/tex/figures/fig3a.pdf"
         "src/tex/figures/fig3b.pdf"
-
     shell:
         "julia src/scripts/fig3.jl"
 
